@@ -346,6 +346,11 @@
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <item>
+             <property name="text">
+              <string>南京板桥储能电站</string>
+             </property>
+            </item>
            </widget>
           </item>
           <item>

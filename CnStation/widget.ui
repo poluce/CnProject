@@ -321,6 +321,11 @@
               <height>60</height>
              </size>
             </property>
+            <item>
+             <property name="text">
+              <string>XXX电厂</string>
+             </property>
+            </item>
            </widget>
           </item>
           <item>

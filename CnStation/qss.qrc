@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>new.qss</file>
+        <file>png/charg.png</file>
+        <file>png/ser.png</file>
+    </qresource>
+</RCC>

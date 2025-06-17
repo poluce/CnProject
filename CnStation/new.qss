@@ -1,0 +1,86 @@
+﻿
+
+QWidget {
+        background-color:#285b5f;
+}
+
+
+QSpinBox {
+    border: 2px solid #336E78 ;        /* 设置边框颜色和粗细 */
+    border-radius: 1px;                /* 圆角半径 */
+    padding: 2px 8px;                  /* 内边距：上下2px，左右4px */
+    background-color: #28484B;          /* 背景色 */
+    color: #77d0c4;          			 /* 文字的字体颜色 */
+}
+
+/*消除pane 的边框*/
+QTabWidget::pane {
+    border: none;
+    background: transparent;
+}
+
+QSpinBox::up-button,
+QSpinBox::down-button {
+    image: none;                      /* 移除图标 */
+    width: 0px;
+    height: 0px;
+    border: none;
+}
+
+QLabel {
+        color:white;
+        background-color: #3b7d89;
+}
+
+QLabel {
+    color: white;                      /* 字体颜色 */
+    background-color: #3b7d89;         /* 背景颜色 */
+    font-weight: bold;                /* 粗体 */
+    font-size: 25px;                  /* 字号大小 */
+    font-family: "Microsoft YaHei";   /* 字体族，Windows推荐雅黑 */
+    /*  padding: 4px;                    内边距，可选 */
+    /*  border-radius: 4px;              圆角边框，可选 */
+}
+
+
+QLineEdit
+{
+    border: 2px solid #3b7d89 ;        /* 设置边框颜色和粗细 */
+    border-radius: 1px;                /* 圆角半径 */
+    padding: 2px 8px;                  /* 内边距：上下2px，左右4px */
+    background-color: #28484B;          /* 背景色 */
+    color: #77d0c4;          			 /* 文字的字体颜色 */
+
+}
+
+
+
+QFrame[k1="true"] {
+    background-color: #336E78;  /* 深蓝色背景 */
+}
+QFrame[k2="true"] {
+    background-color: #3b7d89;  /* 浅蓝色背景 */
+}
+QFrame[k3="true"] {
+    background-color: #285b5f;  /* 蓝色背景 */
+}
+
+
+QHeaderView::section
+{
+    background-color: #285b5f;
+    color: white;
+    padding: 4px;
+    font-weight: bold;
+}
+QTreeWidget
+{
+    color: #77d0c4; /* 所有 item 的字体颜色 */
+}
+
+QPushButton
+{
+color: white;  /* 设置字体颜色为白色 */
+font-weight: bold;                /* 粗体 */
+font-size: 25px;                  /* 字号大小 */
+}

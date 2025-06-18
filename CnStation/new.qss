@@ -36,7 +36,8 @@ QLabel {
     color: white;                      /* 字体颜色 */
     background-color: #3b7d89;         /* 背景颜色 */
     font-weight: bold;                /* 粗体 */
-    font-size: 25px;                  /* 字号大小 */
+    /*font-size: 25px;                  4k 字号大小 */
+    /*font-size: 10px;                  /*1k 字号大小 */
     font-family: "Microsoft YaHei";   /* 字体族，Windows推荐雅黑 */
     /*  padding: 4px;                    内边距，可选 */
     /*  border-radius: 4px;              圆角边框，可选 */
@@ -56,23 +57,26 @@ QLineEdit
 
 
 QFrame[k1="true"] {
-    background-color: #336E78;  /* 深蓝色背景 */
+    background-color: #336E78;  /* 蓝绿色背景 */
 }
 QFrame[k2="true"] {
-    background-color: #3b7d89;  /* 浅蓝色背景 */
+    background-color: #3b7d89;  /* 浅蓝绿色背景 */
 }
 QFrame[k3="true"] {
-    background-color: #285b5f;  /* 蓝色背景 */
+    background-color: #285b5f;  /* 深蓝绿色背景 */
 }
 
 
 QHeaderView::section
 {
-    background-color: #285b5f;
+    background-color: #3b7d89;
     color: white;
     padding: 4px;
+    border: none;               /* 去除立体边框 */
     font-weight: bold;
 }
+
+
 QTreeWidget
 {
     color: #77d0c4; /* 所有 item 的字体颜色 */
@@ -80,7 +84,41 @@ QTreeWidget
 
 QPushButton
 {
-color: white;  /* 设置字体颜色为白色 */
-font-weight: bold;                /* 粗体 */
-font-size: 25px;                  /* 字号大小 */
+    color: white;  /* 设置字体颜色为白色 */
+    font-weight: bold;                /* 粗体 */
+    /*font-size: 25px;                   4k字号大小 */
+   /* font-size: 10px;                   1k字号大小 */
+}
+
+/*双击出现的窗口按钮*/
+QPushButton[b1="true"]
+{
+    background-color: #87c2ca;
+
+}
+/*双击出现的窗口关闭按钮*/
+QPushButton[closeBtn="true"]
+{
+    background-color: #3b7d89;  /* 浅蓝绿色背景 */
+    color: #6eb7b0;
+    border: none;                    /* 无边框 */
+    font-size: 24px;                 /* 小字号 */
+   /* width: 20px;
+    height: 20px;*/
+
+}
+
+QPushButton:hover {
+    background-color: #3b7d89;       /* 红色悬停效果 */
+}
+
+QPushButton[closeBtn="true"]:hover {
+    background-color: #fb324e;       /* 红色悬停效果 */
+}
+
+QComboBox
+{
+    color: white;  /* 设置字体颜色为白色 */
+    font-weight: bold;                /* 粗体 */
+
 }

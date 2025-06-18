@@ -11,6 +11,9 @@
 #include "batterycell.h"
 #include "tab2view.h"
 #include "myusepage.h"
+#include "tab3view.h"
+#include "realtimedataview.h"
+
 
 
 int main(int argc, char *argv[])
@@ -46,6 +49,15 @@ int main(int argc, char *argv[])
     //导航栏小组件
 //    UsePage U;
 //    U.show();
+
+//    //第三页的视图
+//    Tab3View v;
+//    v.show();
+
+//    //实时信息页面的双击窗口
+//    RealTimeDataView T("test");
+//    T.show();
+
 
     QFile file(":/new.qss");
     file.open(QFile::ReadOnly);

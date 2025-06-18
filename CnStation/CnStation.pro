@@ -25,10 +25,12 @@ SOURCES += \
     main.cpp \
     myusepage.cpp \
     paginatedproxymodel.cpp \
+    realtimedataview.cpp \
     runingmessage.cpp \
     signalhub.cpp \
     splineview.cpp \
     tab2view.cpp \
+    tab3view.cpp \
     tableviewdelegate.cpp \
     tablewidge3d.cpp \
     tabmessage.cpp \
@@ -44,10 +46,12 @@ HEADERS += \
     dialwidget.h \
     myusepage.h \
     paginatedproxymodel.h \
+    realtimedataview.h \
     runingmessage.h \
     signalhub.h \
     splineview.h \
     tab2view.h \
+    tab3view.h \
     tableviewdelegate.h \
     tablewidge3d.h \
     tabmessage.h \
@@ -58,6 +62,7 @@ FORMS += \
     bottommessageview.ui \
     chargmessage.ui \
     myusepage.ui \
+    realtimedataview.ui \
     runingmessage.ui \
     splineview.ui \
     tabmessage.ui \

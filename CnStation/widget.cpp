@@ -8,12 +8,21 @@ Widget::Widget(QWidget *parent)
 {
     ui->setupUi(this);
 
+    setWindowTitle("CnStation V1.0");
+    setWindowIcon(QIcon(":/png/CnStation.ico"));
+
     ui->tabWidget->tabBar()->hide();
+
 
     m_initDailWidget();
     m_initHistoryWidget();
+    //第二页面
     m_initTab2View();
     m_initNavigationBar();
+
+    //第三页面
+    m_initTab3View();
+    m_initNavigationBar3();
 }
 
 Widget::~Widget()
@@ -57,6 +66,25 @@ void Widget::m_initNavigationBar()
     m_navigationBar = new UsePage;
     QHBoxLayout * layout = new QHBoxLayout(ui->widget_navigation);
     layout->addWidget(m_navigationBar);
+    layout->setMargin(0);
+    layout->setSpacing(0);
+}
+
+void Widget::m_initTab3View()
+{
+    m_tab3View = new Tab3View;
+
+    QHBoxLayout * layout = new QHBoxLayout(ui->widget_sysmidView);
+    layout->addWidget(m_tab3View);
+    layout->setMargin(0);
+    layout->setSpacing(0);
+}
+
+void Widget::m_initNavigationBar3()
+{
+    m_navigationBar3 = new UsePage;
+    QHBoxLayout * layout = new QHBoxLayout(ui->widget_sysbottom);
+    layout->addWidget(m_navigationBar3);
     layout->setMargin(0);
     layout->setSpacing(0);
 }

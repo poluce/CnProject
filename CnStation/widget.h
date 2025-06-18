@@ -7,6 +7,7 @@
 #include "bottommessageview.h"
 #include "tab2view.h"
 #include "myusepage.h"
+#include "tab3view.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -34,6 +35,8 @@ private:
     void m_initHistoryWidget();
     void m_initTab2View();
     void m_initNavigationBar();
+    void m_initTab3View();
+    void m_initNavigationBar3();
 
 private:
     Ui::Widget *ui;
@@ -42,5 +45,7 @@ private:
     BottomMessageView * m_history;
     Tab2View * m_tab2View;
     UsePage * m_navigationBar;
+    Tab3View  * m_tab3View;
+    UsePage * m_navigationBar3;
 };
 #endif // WIDGET_H

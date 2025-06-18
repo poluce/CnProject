@@ -13,6 +13,13 @@ enum class WidgetType : uint8_t {
     Navigation_last,
     Navigation_topage,
 
+    //第三页的导航栏
+    Navigation3_first,
+    Navigation3_pre,
+    Navigation3_next,
+    Navigation3_last,
+    Navigation3_topage,
+
 
 };
 Q_ENUM_NS(WidgetType)       // 在命名空间级别登记

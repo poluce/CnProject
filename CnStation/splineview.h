@@ -26,6 +26,7 @@ public:
     ~SplineView();
     void setBackColor(QColor color);
 
+
 private:
     void m_initChart();
     void m_setZeroSeries();
@@ -34,7 +35,8 @@ private:
     void m_setValeYxis();
     void m_connectAxisAndSeries();
     QList<QPointF> m_initData();
-    void addCustomTitleSafely();;
+    void addCustomTitleSafely(QChart * chart,QString str1,QString str2);
+
 
 
 private:

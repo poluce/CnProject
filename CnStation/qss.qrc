@@ -3,5 +3,6 @@
         <file>new.qss</file>
         <file>png/charg.png</file>
         <file>png/ser.png</file>
+        <file>png/CnStation.ico</file>
     </qresource>
 </RCC>

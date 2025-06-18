@@ -23,7 +23,7 @@ SplineView::SplineView(QWidget *parent) :
     m_setTimeAxis();
     m_setValeYxis();
     m_connectAxisAndSeries();
-    addCustomTitleSafely();
+    addCustomTitleSafely(m_chart,"充放电功率(MW)","小时");
     setBackColor("#3b7d89");
 
 }
@@ -204,19 +204,20 @@ QList<QPointF> SplineView::m_initData()
     return  series;
 }
 
-void SplineView::addCustomTitleSafely()
+void SplineView::addCustomTitleSafely(QChart * m_chart,QString str1,QString str2)
 {
-    // 移除默认标题
-    m_chart->setTitle("功率曲线");
+    // 默认标题
+    m_chart->setTitle("");
 
     // 确保图表场景已经准备好
     if (m_chart->scene())
     {
         QFont font("Microsoft YaHei", 8, QFont::Bold);
-        QGraphicsTextItem *titleItem = new QGraphicsTextItem("充放电功率(MW)");
-        QGraphicsTextItem *titleItem2 = new QGraphicsTextItem("小时");
+        QGraphicsTextItem *titleItem = new QGraphicsTextItem(str1);
+        QGraphicsTextItem *titleItem2 = new QGraphicsTextItem(str2);
         titleItem->setFont(font);
         titleItem->setDefaultTextColor("#77d0c4");
+
         font.setPointSize(7);
         font.setBold(false);
         titleItem2->setFont(font);

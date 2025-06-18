@@ -85,12 +85,15 @@ void Tab2View::m_initTableView()
     for(int i =0; i<4;i++)
     {
         QTableView*  view = new QTableView;
+
+        view->setModel(m_proxys.at(i));
+        view->horizontalHeader()->setSectionResizeMode(0,QHeaderView::ResizeMode::Fixed);
         view->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+
         //设置选择模式
         view->setSelectionMode(QAbstractItemView::SelectionMode::NoSelection);
         view->setVerticalScrollBarPolicy(Qt::ScrollBarPolicy::ScrollBarAlwaysOff);
         view->verticalHeader()->hide();
-        view->setModel(m_proxys.at(i));
         view->setItemDelegate(m_delegate);
         view->setShowGrid(false);
         view->setEditTriggers(QAbstractItemView::NoEditTriggers);
